@@ -1,6 +1,6 @@
 <?php
     include('paths_users.php');
-    include('header.php');
+    include(DIR_MAIN.'header.php');
 	session_start();
 	$_SESSION['logged']=0;
 	$_SESSION['user'] = 0;
@@ -11,7 +11,7 @@
 		{
 			$_SESSION['logged'] = 1;
                         $_SESSION['user']=$_POST['username'];
-			header ("Refresh: 3; URL=mainPage.php");
+			header ("Refresh: 3; URL=".DIR_MENUBAR."mainPage.php");
 			echo "Witaj <b>". $_POST['username']."</b><br>";
                         echo "Zostaniesz przekierowany na sronę główną.";
 		}
@@ -21,5 +21,5 @@
                     echo "Niepoprawny login lub hasło";   
                 }
         }
-     include('footer.php');
+     include(DIR_MAIN.'footer.php');
 ?>

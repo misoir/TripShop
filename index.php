@@ -1,4 +1,8 @@
-<?php include('header.php'); ?>
+<?php
+    \define("DIR_MAIN", "");
+    include('paths.php');
+    include('header.php'); 
+?>
                     
                         <div id="mainSite">
                             Sklep i inne dziwy

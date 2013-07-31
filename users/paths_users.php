@@ -1,4 +1,5 @@
 
 <?php
-    define("DIR_MAIN", "..\\");
+    \define("DIR_MAIN", "../");
+    include(DIR_MAIN.'paths.php');
 ?>

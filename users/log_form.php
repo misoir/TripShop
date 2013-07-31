@@ -1,7 +1,7 @@
 
 <?php 
     include('paths_users.php');
-    include('../header.php'); 
+    include(DIR_MAIN.'header.php'); 
 ?>
 
     <form action="tryLog.php" method="post" >
@@ -14,4 +14,4 @@
         <!--logForm += "<button class=\"btn\" onclick=\"tryLog.php\">Zaloguj</button>";-->
     </form>;
         
-<?php include('../footer.php'); ?>
+<?php include(DIR_MAIN.'footer.php'); ?>

@@ -1,5 +1,6 @@
 <?php 
-    include('header.php');
+    include('path_menu.php');
+    include('../header.php');
 ?>
         <div>
             <table border="1" style="margin-left: auto; width:50%; margin-right: auto">
@@ -14,4 +15,4 @@
             </table>
         </div>
                         
-<?php include('footer.php'); ?>
+<?php include('../footer.php'); ?>

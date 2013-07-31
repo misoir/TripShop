@@ -16,13 +16,14 @@ and open the template in the editor.
     <head>
         <title>Probna strona</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <script src="css/bootstrap.css"></script>
-        <script src="css/tripshop.css"></script>
-        <script src="js/tripshop.js"></script>
+        <?php
+            echo "<script src=\"".DIR_MAIN."css/bootstrap.css\"></script>";
+            echo "<script src=\"".DIR_MAIN."css/tripshop.css\"></script>";
+            echo "<script src=\"".DIR_MAIN."js/tripshop.js\"></script>";
+            echo "<link rel=\"stylesheet\" href=\"".DIR_MAIN."css/bootstrap.css\">";
+            echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".DIR_MAIN."css/tripshop.css\">";
+        ?>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/tripshop.css">
         
     </head> 
     
@@ -34,10 +35,10 @@ and open the template in the editor.
             
             <div class="mainSize" id="navigationMenu">
                 <ul class="topNav">
-                    <li><a href="mainPage.php" id="MainPageButton">Główna</a></li>
+                    <li><a <?php echo "href=\"".DIR_MENUBAR."mainPage.php\"" ?> id="MainPageButton">Główna</a></li>
                     <li><a href="#">Co nowego?</a></li>
                     <li><a href="#" id="ContactButton">Eventy</a></li>
-                    <li><a href="aboutUs.php" id="AboutButton">O nas</a></li>
+                    <li><a <?php echo "href=\"".DIR_MENUBAR."aboutUs.php\"" ?> id="AboutButton">O nas</a></li>
                 </ul>
                 <ul class="topPur">
                     <?
@@ -45,11 +46,11 @@ and open the template in the editor.
                     {
                         echo "<li><a href=\"#\">Dodaj artykuł</a></li>";
                         echo "<li><a href=\"#\">". $_SESSION['user'] ."</a></li>";
-                        echo "<li><a href=\"\users\logOut.php\">Wyloguj</a></li>";
+                        echo "<li><a href=\"".DIR_USERS."logOut.php\">Wyloguj</a></li>";
                     }
                     else
                     {
-                        echo "<li><a href=\"users\log_form.php\" id=\"loginButton\">Zaloguj</a></li>";
+                        echo "<li><a href=\"".DIR_USERS."log_form.php\" id=\"loginButton\">Zaloguj</a></li>";
                     }
                     ?>
                 </ul>
