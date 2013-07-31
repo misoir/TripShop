@@ -1,4 +1,8 @@
-<?php include('header.php'); ?>
+
+<?php 
+    include('paths_users.php');
+    include('../header.php'); 
+?>
 
     <form action="tryLog.php" method="post" >
         <!--<input type="hidden" name="redirect" value="<?php // echo $_GET['redirect']; ?>">-->
@@ -10,4 +14,4 @@
         <!--logForm += "<button class=\"btn\" onclick=\"tryLog.php\">Zaloguj</button>";-->
     </form>;
         
-<?php include('footer.php'); ?>
+<?php include('../footer.php'); ?>

@@ -1,4 +1,5 @@
 <?php
+    include('paths_users.php');
     include('header.php');
 	session_start();
 	$_SESSION['logged']=0;

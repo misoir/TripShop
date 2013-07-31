@@ -2,7 +2,10 @@
 To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
-<?php header('Content-Type: text/html; charset=utf-8'); ?>
+<?php 
+    header('Content-Type: text/html; charset=utf-8');
+    //define(MAIN_DIR, 'localhost\Tripshop_reorg');
+?>
 
 <!DOCTYPE html>
 
@@ -26,7 +29,7 @@ and open the template in the editor.
     <body style="background-color: #cccc99">
         <div id="main">
             <div class="header mainSize" id="header"></div>
-            <div><a href="index.php" style="text-decoration: none" class="header_font">TripHouse</a></div>
+            <div><a <?php echo "href=\"".DIR_MAIN."index.php\"" ?> style="text-decoration: none" class="header_font">TripHouse</a></div>
             
             
             <div class="mainSize" id="navigationMenu">
@@ -42,11 +45,11 @@ and open the template in the editor.
                     {
                         echo "<li><a href=\"#\">Dodaj artykuł</a></li>";
                         echo "<li><a href=\"#\">". $_SESSION['user'] ."</a></li>";
-                        echo "<li><a href=\"logOut.php\">Wyloguj</a></li>";
+                        echo "<li><a href=\"\users\logOut.php\">Wyloguj</a></li>";
                     }
                     else
                     {
-                        echo "<li><a href=\"log_form.php\" id=\"loginButton\">Zaloguj</a></li>";
+                        echo "<li><a href=\"users\log_form.php\" id=\"loginButton\">Zaloguj</a></li>";
                     }
                     ?>
                 </ul>

@@ -19,15 +19,6 @@ root {
     
     background-repeat:no-repeat;
     background-position: top center;
-    /*-webkit-filter: blur(3px);*/
-/*    filter: blur(3px); 
-    -webkit-filter: blur(3px); 
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px); -ms-filter: blur(3px);
-    filter: header;*/
-/*    position: fixed;*/
-/*    left:12%;
-    right:12%;*/
     height:240px;
 }
 .header_font{
