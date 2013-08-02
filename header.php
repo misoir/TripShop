@@ -17,11 +17,15 @@ and open the template in the editor.
         <title>Probna strona</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <?php
-            echo "<script src=\"".DIR_MAIN."css/bootstrap.css\"></script>";
-            echo "<script src=\"".DIR_MAIN."css/tripshop.css\"></script>";
-            echo "<script src=\"".DIR_MAIN."js/tripshop.js\"></script>";
-            echo "<link rel=\"stylesheet\" href=\"".DIR_MAIN."css/bootstrap.css\">";
+            //STYLE
+            echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".DIR_MAIN."css/bootstrap.css\">";
             echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".DIR_MAIN."css/tripshop.css\">";
+//            echo "<script src=\"".DIR_MAIN."css/tripshop.css\"></script>";
+            echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".DIR_MAIN."css/articles.css\">";
+            
+            //SKTYPTY JAVASCRIPT
+            echo "<script src=\"".DIR_MAIN."js/tripshop.js\"></script>";
+//            echo "<link rel=\"stylesheet\" href=\"".DIR_MAIN."css/bootstrap.css\">";
         ?>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         
@@ -30,13 +34,13 @@ and open the template in the editor.
     <body style="background-color: #cccc99">
         <div id="main">
             <div class="header mainSize" id="header"></div>
-            <div><a <?php echo "href=\"".DIR_MAIN."index.php\"" ?> style="text-decoration: none" class="header_font">TripHouse</a></div>
+            <div><a <?php echo "href=\"".DIR_MAIN."index.php\"" ?> style="text-decoration: none" class="header_font">TripBoard</a></div>
             
             
             <div class="mainSize" id="navigationMenu">
                 <ul class="topNav">
                     <li><a <?php echo "href=\"".DIR_MENUBAR."mainPage.php\"" ?> id="MainPageButton">Główna</a></li>
-                    <li><a href="#">Co nowego?</a></li>
+                    <li><a <?php echo "href=\"".DIR_NEWS_PHP."\"" ?> id="newsButton">Co nowego?</a></li>
                     <li><a href="#" id="ContactButton">Eventy</a></li>
                     <li><a <?php echo "href=\"".DIR_MENUBAR."aboutUs.php\"" ?> id="AboutButton">O nas</a></li>
                 </ul>
@@ -71,5 +75,5 @@ and open the template in the editor.
                             <li><a href="#">Łoże fakira</a></li>
                           </ul>
                     </div>
-                    <div class="span8" id="content">
+                    <div class="span10" id="content">
                         

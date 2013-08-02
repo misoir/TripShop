@@ -23,7 +23,7 @@ root {
 }
 .header_font{
     font-family: 'palatino linotype', palatino, serif;
-    font-size: 45px;
+    font-size: 75px;
     color: black;
     position: absolute;
     top: 30px;
@@ -68,7 +68,6 @@ color:#7A991A;
     margin: auto;
 }
 
-
 #navigationMenu{
     position:relative; 
     margin:auto;
@@ -94,14 +93,14 @@ color:#7A991A;
 #content
 {
     position: relative;
-    top: 20px;
-    bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     /*background-color:#cccc99;*/
     text-align: center;
 }
 #page
 {
-    height: auto;;
+    height: auto;
     border-left: 1px solid #666600;
     border-right:1px solid #666600;
     background-color:#ffffff;

@@ -4,7 +4,7 @@
     include('header.php'); 
 ?>
                     
-                        <div id="mainSite">
+                        <div class="headlineTitle" id="mainSite">
                             Sklep i inne dziwy
                         </div>
 <!--                        <div class="hide" id="logPanel">
