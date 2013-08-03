@@ -23,14 +23,14 @@ root {
     /*//background-position: center;*/
     display: table;
     
-    width: 70% ;
+    width: 80% ;
     /*margin-left: 15%;*/
     height: 200px;
     /*background: #cccc99;*/
     border-bottom: 1px solid #666600;
     border-right: 1px solid #666600;
     border-bottom-right-radius: 50px;
-    margin: 5px 15% 5px 15%;
+    margin: 5px 10% 5px 10%;
 }
 
 .headlineTitle
@@ -49,18 +49,15 @@ root {
 
 .headlineImage
 {
-/*    display: table-cell;*/
     position: relative;
     height: 100%;
     width:100%;
     vertical-align: middle;
-    /*background: #336600;*/
 }
 .headlineImage img
 {
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 5px 5px 5px #888888;
 }
-/* Positioning */
 .dateAuthor
 {
 background-color: #cdcdcd;
@@ -74,14 +71,24 @@ background-color: #cdcdcd;
  max-width:90%;
  border: 1px solid #666600;
 }
-.newsboardDescr
-{
-    display: table-column;
-    height: 150px;
-    
-    /*background: #669900;*/
-}
 
+#readArticle
+{
+    margin-left: 10%;
+    width:80%;
+}
+#article_title{
+    margin-top: 20px;
+}
+#article_content
+{
+    margin-top: 40px;
+}
+#article_content p
+{
+    text-indent: 10%;
+    text-align: justify;
+}
 .col-2-3 {
 	width: 66.66%;
 }

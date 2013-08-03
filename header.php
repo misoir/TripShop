@@ -1,7 +1,6 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+session_start();
+?>
 <?php 
     header('Content-Type: text/html; charset=utf-8');
     //define(MAIN_DIR, 'localhost\Tripshop_reorg');
@@ -9,12 +8,10 @@ and open the template in the editor.
 
 <!DOCTYPE html>
 
-<?php
-    session_start();
-?>
+
 <html>
     <head>
-        <title>Probna strona</title>
+        <title>TripBoard</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <?php
             //STYLE

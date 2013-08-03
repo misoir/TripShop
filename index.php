@@ -1,5 +1,5 @@
 <?php
-    \define("DIR_MAIN", "");
+    define("DIR_MAIN", "");
     include('paths.php');
     include('header.php'); 
 ?>

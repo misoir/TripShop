@@ -1,10 +1,11 @@
 <?php 
     include('path_menu.php');
+    require DIR_DB_CONNECTION_PHP;
     include(DIR_MAIN.'header.php'); 
 ?>
                     
                         <div id="newsBoard">
-                            <div class="headline">
+<!--                            <div class="headline">
                                 <div  class="col-1-4 headlineImage">
                                     <div>
                                         <img class="absoluteCenter" src="http://4.bp.blogspot.com/_VZIxcvJd3x0/S-m_2n02WaI/AAAAAAAAAAk/JY_Gv6GLaZI/S1600-R/227045_p.jpg">
@@ -22,14 +23,28 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
 
 <?php
-    $articlesTab[0]=DIR_ARTICLES.'2013/08/PierwszyArtykul.xml';
-    $articlesTab[1]=DIR_ARTICLES.'2013/08/drugiArtykul.xml';
+    db_connect();
+    $query = 'SELECT url FROM articles ORDER BY date';
+    $answer = mysql_query($query);
+//    db_query($query, $answer);
+//    if(mysql_num_rows($answer) > 0) {
+////        echo "cos jest";
+////        Print_r($data);
+//        echo $data[0];
+//        $data = mysql_fetch_array($answer);
+//        echo $data[0];
+//    }
+//    echo $query;
+//    $articlesTab[0]=DIR_ARTICLES.'2013/08/PierwszyArtykul.xml';
+//    $articlesTab[1]=DIR_ARTICLES.'2013/08/drugiArtykul.xml';
     for($i=0; $i<2; $i++):
     
-    $article = simplexml_load_file($articlesTab[$i]);
+    $data = mysql_fetch_array($answer);
+//    $article = simplexml_load_file($articlesTab[$i]);
+    $article = simplexml_load_file(DIR_MAIN.$data[url]);
 ?>
                             <div class="headline">
                                 <div  class="col-1-4 headlineImage">
@@ -49,20 +64,23 @@
                                             echo $article->author;
                                         ?>
                                     </div>
-                                    <div>
+                                    <div style="padding-left: 5px; padding-right: 5px; margin-top:10px;">
                                         <p>
                                             <?echo substr($article->content,0,strrpos(substr($article->content,0,400)," "))."..."; ?>
-                                            <a href="#">czytaj dalej</a>
+                                             <a <?php echo "href=\"" . DIR_READ_PHP . "?url=" . $article->url . "\"" ?> >czytaj dalej</a>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+
 
                         
 <?php 
     endfor;
-include(DIR_MAIN.'footer.php'); 
+?>
+                        </div>
+<?php
+    include(DIR_MAIN.'footer.php'); 
 ?>
 <script>
     $(".headline > div").attr("style","float:left;");

@@ -15,22 +15,22 @@
         http://4.bp.blogspot.com/_VZIxcvJd3x0/S-m_2n02WaI/AAAAAAAAAAk/JY_Gv6GLaZI/S1600-R/227045_p.jpg
     </image>
     <content>
+        &lt;p /&gt;
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat eu dui eu tempus. Quisque sed est in augue dictum condimentum eu in velit. Integer sit amet tristique urna. In hac habitasse platea dictumst. Quisque eget nulla erat. Integer in nulla egestas, bibendum sem in, venenatis tortor. Integer dolor ipsum, lacinia a tortor vel, consequat malesuada lacus. Mauris eleifend mi vitae dictum facilisis. Morbi vitae metus nec libero faucibus pretium quis eu ipsum.
-
+        &lt;/p&gt; &lt;p&gt;
 Vestibulum sit amet odio commodo, malesuada justo ac, sollicitudin lacus. Morbi congue magna ut tortor molestie facilisis. Nullam at vestibulum eros, nec sagittis purus. Nam eu semper diam. Suspendisse lacinia id quam vitae dictum. Nam at leo quam. Morbi elementum orci nunc, sit amet congue ipsum dictum et. In molestie cursus bibendum.
-
+        &lt;/p&gt; &lt;p&gt;    
 Donec eleifend, sem a scelerisque semper, massa eros congue ligula, nec porttitor dui arcu eu diam. Fusce molestie dui ac elit pretium, in dapibus est condimentum. Nam et aliquam odio. In quis metus vel sem congue feugiat. Vivamus lacinia lectus ut convallis ultricies. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus metus velit, mattis sit amet congue vitae, adipiscing quis augue. Vestibulum hendrerit ac purus eu ornare. Duis vel varius felis, ac rhoncus velit. Nulla ut sapien at metus egestas vulputate. Vivamus arcu tortor, dictum eget elementum rutrum, rutrum eget massa.
-
+        &lt;/p&gt; &lt;p&gt;
 Sed vehicula iaculis augue, et pulvinar justo dapibus sed. Duis consequat sed risus et porta. Curabitur non justo eget dolor pharetra rutrum. In ac cursus sem, sagittis pharetra arcu. Sed volutpat blandit lorem, in rhoncus velit porta sed. Curabitur tincidunt leo felis, et ultricies diam accumsan eget. Nam eu lectus nec neque convallis tristique. Ut iaculis ac arcu sit amet tristique. Cras interdum mi felis, ut aliquet orci suscipit rhoncus. Vestibulum vestibulum odio eu magna iaculis imperdiet. Cras molestie sed ante sed congue. Aliquam nulla leo, sollicitudin sit amet dui sed, aliquam porttitor urna.
-
+        &lt;/p&gt; &lt;p&gt;
 Phasellus dictum sem erat, dictum porttitor ante hendrerit viverra. Suspendisse ultrices nunc vel magna porta dignissim. Vivamus fermentum turpis vitae diam sodales mollis at non massa. Sed venenatis consectetur vehicula. Suspendisse mattis fermentum purus vitae accumsan. Aenean pretium pharetra elit a laoreet. Suspendisse ac mauris venenatis nulla scelerisque molestie. Donec pharetra diam quis tristique porta. Aliquam in egestas quam, mattis ornare augue. Sed molestie, nisi a pretium facilisis, justo tellus consequat tortor, sed scelerisque quam purus vel purus. Duis massa lectus, rutrum quis lectus et, vehicula suscipit elit. Maecenas eget ultricies sem.
-
+        &lt;/p&gt; &lt;p&gt;
 Vivamus nec enim sit amet arcu tristique venenatis. Nullam tortor purus, luctus sit amet quam nec, sodales aliquet mi. Suspendisse pretium lectus eget arcu vehicula bibendum. Morbi ultrices risus orci, sit amet interdum dui dictum et. In iaculis sapien tempor est accumsan, quis rhoncus ipsum hendrerit. Donec scelerisque viverra ornare. Integer diam metus, consectetur ac aliquam ac, auctor sed purus. Phasellus leo nunc, suscipit eu ipsum accumsan, posuere tincidunt nisl. Phasellus dictum arcu non leo venenatis condimentum. Donec sollicitudin risus dui, ac venenatis est iaculis vitae. Sed posuere porttitor mi, eget ullamcorper nibh dapibus vel. Nam non molestie eros. Integer fermentum vehicula risus, nec elementum magna ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget consequat odio, eget dictum ipsum. Suspendisse feugiat congue lorem.
+        &lt;p/&gt;
     </content>
     <tags>
         
     </tags>
-    <url>
-        articles/2013/08/drugiArtykul.xml
-    </url>
+    <url>2013/08/drugiArtykul.xml</url>
 </article>
