@@ -27,7 +27,7 @@
 
 <?php
     db_connect();
-    $query = 'SELECT url FROM articles ORDER BY date';
+    $query = 'SELECT url FROM articles ORDER BY date DESC';
     $answer = mysql_query($query);
 //    db_query($query, $answer);
 //    if(mysql_num_rows($answer) > 0) {
@@ -44,7 +44,7 @@
     
     $data = mysql_fetch_array($answer);
 //    $article = simplexml_load_file($articlesTab[$i]);
-    $article = simplexml_load_file(DIR_MAIN.$data[url]);
+    $article = simplexml_load_file(DIR_ARTICLES.$data[url]);
 ?>
                             <div class="headline">
                                 <div  class="col-1-4 headlineImage">

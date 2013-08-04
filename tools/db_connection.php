@@ -7,7 +7,7 @@ function db_connect()
     // hasło 
     $mysql_pass = '';
     // nazwa bazy 
-    $mysql_db = "TripShop"; 
+    $mysql_db = "TripBoard"; 
     @mysql_connect($mysql_host, $mysql_user, $mysql_pass) 
     or die('Brak połączenia z serwerem MySQL.'); 
     // łączymy się z bazą danych 
