@@ -1,6 +1,7 @@
 <?php 
     include('path_menu.php');
     require DIR_DB_CONNECTION_PHP;
+    require_once DIR_VIEW_PHP;
     include(DIR_MAIN.'header.php'); 
 ?>
                     
@@ -26,7 +27,7 @@
                             </div>-->
 
 <?php
-    db_connect();
+//    db_connect();
     $query = 'SELECT url FROM articles ORDER BY date DESC';
     $answer = mysql_query($query);
 //    db_query($query, $answer);
@@ -45,6 +46,7 @@
     $data = mysql_fetch_array($answer);
 //    $article = simplexml_load_file($articlesTab[$i]);
     $article = simplexml_load_file(DIR_ARTICLES.$data[url]);
+    
 ?>
                             <div class="headline">
                                 <div  class="col-1-4 headlineImage">
@@ -72,10 +74,12 @@
                                     </div>
                                 </div>
                             </div>
+                                        
 
 
                         
 <?php 
+    vertical_headline($article->image, $article->title, $article->p_date, $article->author, $article->content, $article->url);
     endfor;
 ?>
                         </div>

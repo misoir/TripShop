@@ -26,7 +26,7 @@
                                 </h1>
                             </div>
                             <div id="article_content">
-                                <img <?php echo "src=\"" . $article->image . "\"" ?>  width="300" height="300" alt="piesek" align="left">
+                                <img <?php echo "src=\"" . $article->image . "\"" ?>  width="300" height="300" alt="obrazek" align="left">
                                 <?php 
                                     echo $article->content;
                                 ?>

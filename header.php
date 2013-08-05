@@ -16,11 +16,12 @@ session_start();
         <?php
             //STYLE
             echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".DIR_MAIN."css/bootstrap.css\">";
+//            echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".DIR_MAIN."css/bootstrap.min.css\">";
             echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".DIR_MAIN."css/tripshop.css\">";
-//            echo "<script src=\"".DIR_MAIN."css/tripshop.css\"></script>";
             echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".DIR_MAIN."css/articles.css\">";
             
             //SKTYPTY JAVASCRIPT
+            echo "<script src=\"".DIR_MAIN."js/bootstrap.js\"></script>";
             echo "<script src=\"".DIR_MAIN."js/tripshop.js\"></script>";
 //            echo "<link rel=\"stylesheet\" href=\"".DIR_MAIN."css/bootstrap.css\">";
         ?>
@@ -45,7 +46,7 @@ session_start();
                     <?
                     if(isset($_SESSION['logged']) && $_SESSION['logged']==1)
                     {
-                        echo "<li><a href=\"#\">Dodaj artykuł</a></li>";
+                        echo "<li><a href=\"" . DIR_ADDARTICLE_PHP . "\">Dodaj artykuł</a></li>";
                         echo "<li><a href=\"#\">". $_SESSION['user'] ."</a></li>";
                         echo "<li><a href=\"".DIR_USERS."logOut.php\">Wyloguj</a></li>";
                     }
