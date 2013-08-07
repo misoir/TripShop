@@ -9,7 +9,9 @@
 root { 
     display: block;
 }
-
+em, .error {
+    color: red;
+}
 .header {
     /*background-color:#6495ed;*/
     

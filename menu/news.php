@@ -41,45 +41,51 @@
 //    echo $query;
 //    $articlesTab[0]=DIR_ARTICLES.'2013/08/PierwszyArtykul.xml';
 //    $articlesTab[1]=DIR_ARTICLES.'2013/08/drugiArtykul.xml';
-    for($i=0; $i<2; $i++):
+    for($i=0; $i<3; $i++):
     
     $data = mysql_fetch_array($answer);
 //    $article = simplexml_load_file($articlesTab[$i]);
     $article = simplexml_load_file(DIR_ARTICLES.$data[url]);
     
 ?>
-                            <div class="headline">
+<!--                            <div class="headline">
                                 <div  class="col-1-4 headlineImage">
-                                    <img class="absoluteCenter" <?php echo "src=\"".$article->image."\""?>>
+                                    <img class="absoluteCenter" <?php // echo "src=\"".$article->image."\""?>>
                                 </div>
                                 <div  class="col-3-4 headlineDescr">
                                     <div>
-                                    <h2 style="margin-bottom:0;"><?php echo $article->title ?> </h2>
+                                    <h2 style="margin-bottom:0;"><?php // echo $article->title ?> </h2>
                                     </div>
                                     <div class="dateAuthor" >
                                         <?php 
-                                            echo $article->date->day;
-                                            echo "-";
-                                            echo $article->date->month;
-                                            echo "-";
-                                            echo $article->date->year;
-                                            echo $article->author;
+//                                            echo $article->date->day;
+//                                            echo "-";
+//                                            echo $article->date->month;
+//                                            echo "-";
+//                                            echo $article->date->year;
+//                                            echo $article->author;
                                         ?>
                                     </div>
                                     <div style="padding-left: 5px; padding-right: 5px; margin-top:10px;">
                                         <p>
-                                            <?echo substr($article->content,0,strrpos(substr($article->content,0,400)," "))."..."; ?>
-                                             <a <?php echo "href=\"" . DIR_READ_PHP . "?url=" . $article->url . "\"" ?> >czytaj dalej</a>
+                                            <? //echo substr($article->content,0,strrpos(substr($article->content,0,400)," "))."..."; ?>
+                                             <a <?php // echo "href=\"" . DIR_READ_PHP . "?url=" . $article->url . "\"" ?> >czytaj dalej</a>
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                                         
 
 
                         
 <?php 
-    vertical_headline($article->image, $article->title, $article->p_date, $article->author, $article->content, $article->url);
+    $date = '';
+    $date .= $article->date->day;
+    $date .= "-";
+    $date .= $article->date->month;
+    $date .= "-";
+    $date .= $article->date->year;
+    vertical_headline($article->image, $article->title, $date, $article->author, $article->content, $article->url);
     endfor;
 ?>
                         </div>

@@ -1,0 +1,41 @@
+tablica u¿ytkowników
+CREATE  TABLE `tripboard`.`users` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `nick` VARCHAR(30) NOT NULL ,
+  `name` VARCHAR(30) NULL ,
+  `surname` VARCHAR(45) NULL ,
+  `rights` INT NOT NULL ,
+  `password` VARCHAR(30) NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) ,
+  UNIQUE INDEX `nick_UNIQUE` (`nick` ASC) )
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_bin;
+
+
+tablica tagów
+CREATE  TABLE `tripboard`.`tags` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `name` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) ,
+  UNIQUE INDEX `name_UNIQUE` (`name` ASC) );
+
+tablica rodzajów zawartoœci
+CREATE  TABLE `tripboard`.`content_type` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `name` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) ,
+  UNIQUE INDEX `name_UNIQUE` (`name` ASC) );
+
+
+INSERT INTO `tripboard`.`tags_link` (`tag_id`, `content_id`, `content_type`) VALUES ('1', '1', '1');
+INSERT INTO `tripboard`.`tags_link` (`tag_id`, `content_id`, `content_type`) VALUES ('1', '2', '1');
+INSERT INTO `tripboard`.`tags_link` (`tag_id`, `content_id`, `content_type`) VALUES ('1', '5', '1');
+INSERT INTO `tripboard`.`tags_link` (`tag_id`, `content_id`, `content_type`) VALUES ('2', '1', '1');
+INSERT INTO `tripboard`.`tags_link` (`tag_id`, `content_id`, `content_type`) VALUES ('2', '2', '1');
+INSERT INTO `tripboard`.`tags_link` (`tag_id`, `content_id`, `content_type`) VALUES ('2', '5', '1');
+INSERT INTO `tripboard`.`tags_link` (`tag_id`, `content_id`, `content_type`) VALUES ('3', '5', '1');
+INSERT INTO `tripboard`.`tags_link` (`tag_id`, `content_id`, `content_type`) VALUES ('4', '2', '1');
+INSERT INTO `tripboard`.`tags_link` (`tag_id`, `content_id`, `content_type`) VALUES ('4', '5', '1');

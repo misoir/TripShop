@@ -1,6 +1,8 @@
 <?php
     header('Content-Type: text/html; charset=utf-8');
     
+    define("DIR_INDEX_PHP", DIR_MAIN."index.php");
+    
     define("DIR_USERS", DIR_MAIN."users/");
     
     define("DIR_MENUBAR", DIR_MAIN."menu/");

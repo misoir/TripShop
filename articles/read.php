@@ -18,6 +18,7 @@
                                         echo $article->date->month;
                                         echo "-";
                                         echo $article->date->year;
+                                        echo "   ";
                                         echo $article->author;
                                     ?>
                                 </h6>
