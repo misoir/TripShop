@@ -13,6 +13,7 @@ session_start();
     <head>
         <title>TripBoard</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
         <?php
             //STYLE
             echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".DIR_MAIN."css/bootstrap.css\">";
@@ -63,11 +64,24 @@ session_start();
                     <div class="span2" id="leftMenu">
                         <ul class="nav nav-list">
                             <li class="nav-header">Kategorie</li>
-                            <li><a href="#">Miotły</a></li>
-                            <li><a href="#">Bakterie</a></li>
-                            <li><a href="#">Grzyby</a></li>
-                            <li><a href="#">Rowery</a></li>
-                            
+                            <?php
+                                require_once DIR_DB_CONNECTION_PHP;
+                                $query1 = 'SELECT name FROM categories ORDER BY name ASC';
+                                mysql_query('SET NAMES \'utf8\'');
+                                $answer1 = mysql_query($query1);
+                                while($data = mysql_fetch_array($answer1)):
+                                echo "<li><a href=\"#\">" . ucwords($data['name']) . "</a></li>";
+                                endwhile;
+                            ?>
+                            <li class="nav-header">Producenci</li>
+                            <?php
+                                $query2 = 'SELECT name FROM producers ORDER BY name ASC';
+                                mysql_query('SET NAMES \'utf8\'');
+                                $answer2 = mysql_query($query2);
+                                while($data = mysql_fetch_array($answer2)):
+                                echo "<li><a href=\"#\">" . ucwords($data['name']) . "</a></li>";
+                                endwhile;
+                            ?>
                             <li class="nav-header">Najlepsze produkty</li>
                             <li><a href="#">Grzybica stóp</a></li>
                             <li><a href="#">Łoże fakira</a></li>

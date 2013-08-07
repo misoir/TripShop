@@ -17,6 +17,7 @@
 ?>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
+<!--<script type="text/javascript" src="http://gregpike.net/demos/bootstrap-file-input/bootstrap.file-input.js"></script>-->
 
 <script>
 //    jQuery.validator.setDefaults({
@@ -67,6 +68,13 @@
                 <label class="control-label" for="imageInput">Obrazek</label>
                 <input type="text" class="input-xlarge required" name="image" id="imageInput" placeholder="Podaj źródło obrazka" style="width: 80%;">
             </div>
+<!--            <div class="control-group">
+                <input type="file"  name="image1" id="imageInput1" style="display: none;" id="imfile">
+                <div class="input-append">
+                    <input type="text" name="subfile" id="subfile" class="input-xlarge">
+                    <a class="btn" onclick="$('#imageInput1').click();">Browse</a>
+                </div>
+            </div>-->
             <div class="control-group">
                 <label class="control-label" for="contentInput">Tekst<em>*</em></label>
                 <textarea class="input-xlarge" name="content" rows="10" style="width: 80%;"></textarea>
@@ -78,4 +86,9 @@
         </fieldset>
     </form>
 </div>
+<script>
+//$('input[type=file]').bootstrapFileInput();    
+//$('.file-inputs').bootstrapFileInput();
+$('#imageInput1').change(function(){$('#subfile').val($(this).val());});
+</script>
 <?php include(DIR_MAIN.'footer.php'); ?>
