@@ -70,7 +70,7 @@ session_start();
                                 mysql_query('SET NAMES \'utf8\'');
                                 $answer1 = mysql_query($query1);
                                 while($data = mysql_fetch_array($answer1)):
-                                echo "<li><a href=\"#\">" . ucwords($data['name']) . "</a></li>";
+                                echo "<li><a href=\"" . DIR_EQUIP_REVIEW_PHP . "?cat=" . $data['name'] . "\">" . ucwords($data['name']) . "</a></li>";
                                 endwhile;
                             ?>
                             <li class="nav-header">Producenci</li>
@@ -79,7 +79,7 @@ session_start();
                                 mysql_query('SET NAMES \'utf8\'');
                                 $answer2 = mysql_query($query2);
                                 while($data = mysql_fetch_array($answer2)):
-                                echo "<li><a href=\"#\">" . ucwords($data['name']) . "</a></li>";
+                                echo "<li><a href=\"" . DIR_EQUIP_REVIEW_PHP . "?prod=" . $data['name'] . "\">" . ucwords($data['name']) . "</a></li>";
                                 endwhile;
                             ?>
                             <li class="nav-header">Najlepsze produkty</li>

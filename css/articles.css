@@ -12,10 +12,24 @@ root {
 
 #newsBoard
 {
-    width: 90%;
+    width: 100%;
+    display: table;
     /*height: 100%;*/
     /*background: #999900;*/
     border: 5px;
+}
+
+#horizontalHeadlinesBoard
+{
+ display: table-cell;
+    float: left;
+}
+
+#verticalHeadlinesBoard
+{
+    display: table-cell;
+    float: left;
+    /*border: 1px solid #666600;*/
 }
 
 .headline
@@ -23,14 +37,15 @@ root {
     /*//background-position: center;*/
     display: table;
     
-    width: 80% ;
+    width: 90% ;
     /*margin-left: 15%;*/
     height: 250px;
     /*background: #cccc99;*/
     border-bottom: 1px solid #666600;
     border-right: 1px solid #666600;
     border-bottom-right-radius: 50px;
-    margin: 5px 10% 5px 10%;
+    margin: 5px 0 5px 0%;
+    
 }
 
 .headlineTitle
@@ -72,6 +87,53 @@ background-color: #cdcdcd;
  border: 1px solid #666600;
 }
 
+.vert_head
+{
+    /*display: table;*/
+    
+    width: 100% ;
+    height: 375px;
+    border-bottom: 1px solid #666600;
+    border-left: 1px solid #666600;
+    border-right: 1px solid #666600;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 5px 0px 5px 0;
+    float: left;
+}
+
+.vert_equip_image
+{
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+
+.vert_equip_image img
+{
+    box-shadow: 5px 5px 5px #888888;
+    max-height: 90%;
+    max-width: 90%;
+    vertical-align: middle;
+    border: 1px solid #666600;
+}
+.vert_equip_text
+{
+    margin: 10px 0 10px 0;
+}
+.vert_equip_title
+{
+    
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.vert_equip_title a
+{
+    text-decoration: none;
+    color:black;
+    font-size: 30px;
+}
 #readArticle
 {
     margin-left: 10%;
@@ -106,4 +168,58 @@ background-color: #cdcdcd;
 }
 .col-1-8 {
 	width: 12.5%;
+}
+
+
+#equipReview
+{
+ /*border: 1px solid #666600;*/
+    
+}
+#equipTable
+{
+    width: 100%;
+    display: table;
+}
+.inline_box
+{
+    width: 230px;
+    height: 230px;
+    padding: 10px;
+    /*border: 1px solid #666600;*/
+    float: left;
+}
+.radius_border
+{
+    border: 1px solid #666600;
+    border-radius: 10px;    
+}
+.inline_box div[name="image"]
+{
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+.inline_box img
+{
+    max-width: 90%;
+    max-height: 90%;
+    
+    vertical-align: middle;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.inline_box div[name="name"]
+{
+    font-family: 'palatino linotype', palatino, serif;
+    font-size: 25px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.looks_like_no_link
+{
+    text-decoration: none;
+    color:black;
 }

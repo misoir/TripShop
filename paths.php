@@ -11,6 +11,11 @@
     define("DIR_DB_CONNECTION_PHP", DIR_MAIN."tools/db_connection.php");
     define("DIR_HTTP_PHP", DIR_MAIN."tools/http.php");
     
+    define("DIR_EQUIP_REVIEW_PHP",DIR_MAIN."equipment/equip_review.php");
+    define("DIR_EQUIP_SHOW_PHP",DIR_MAIN."equipment/equip_show.php");
+    
+    define("DIR_IMG",DIR_MAIN."img/");
+    
     define("DIR_ARTICLES", DIR_MAIN."articles/");
     define("DIR_READ_PHP", DIR_MAIN."articles/read.php");
     define("DIR_VIEW_PHP", DIR_MAIN."articles/view.php");
